@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica - Formulario</title>
+</head>
+<body>
+    <form method="post" action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <input type="text" placeholder="Tu Nombre" name="nombre"required autofocus/>
+            <input type="text" placeholder="Tu Apellido" name="apellido"requiered/>
+        </p>
+            <label>Fecha de Nacimiento</label>
+            <input type="date"/></label>
+            <input type="number" placeholder="Tu Edad"/>
+        </p>
+            <input type="email" placeholder="Tu E-Mail"/>
+            <input type="phone" placeholder="Telefono"/>
+        </p>
+            <label>Sexo:</label>
+            <input type="radio" name="sexo" value="h"/><label>Hombre</label>
+            <input type="radio" name="sexo" value="m"/><label>Mujer</label>
+        </p>
+            <label>Ciudad de Residencia</label>
+            <select name="ciudad">
+                <option>Asunción</option>
+                <option>San Lorenzo</option>
+                <option>Fernando de la Mora</option>
+                <option>Capiatá</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos Laborales</legend>
+            <label>Disponibilidad de tiempo</label>
+            <input type="checkbox"  value="true" name="dispo_m">Mañana
+            <input type="checkbox"  value="true" name="dispo_t">Tarde
+            <input type="checkbox"  value="true" name="dispo_n">Noche
+            </p>
+            <label>Aspiracion Salarial</label>
+            Gs. 2.500.000<input type="range" min="2500000" max="5500000" step="100000">Gs. 5.500.000
+        </fieldset>
+            <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
